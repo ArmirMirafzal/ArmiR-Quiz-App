@@ -32,7 +32,7 @@ function randOperation() {
 }
 
 function nearResult() {
-  return Math.floor(Math.random() * result) + (result + 10);
+  return Math.floor(Math.random() * result) + (result - 10);
 }
 
 // RENDER FUNCTIONS
