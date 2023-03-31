@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  text-align: center;
+  /* background: rgb(97,97,240); */
+}
+
+.container {
+  width: 820px;
+  border-radius: 8px;
+  height: 78%;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 100px 40px;
+  background: #fff;
+  margin-bottom: 60px;
+}
+
+.event {
+  width: auto;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 30px;
+  cursor: pointer;
+  user-select: none;
+  border: none;
+  color: #fff;
+  background-color: #0d6efd;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.event:hover{
+  box-shadow: 5px 5px 19px -5px #0000004e inset;
+}
+
+.name {
+  display: none;
+  font-size: 70px;
+  letter-spacing: 9px;
+  color: rgb(0, 255, 204);
+  margin-bottom: 30px;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 150px 0px 170px;
+  margin-bottom: 70px;
+}
+
+.question .num, .equals {
+  margin-bottom: 10px;
+  font-size: 70px;
+  font-weight: 900;
+  line-height: 50px;
+  user-select: none;
+  width: 100px;
+  color: rgb(16,16,107);
+}
+
+.question .operation{
+  font-weight: 900;
+  font-size: 40px;
+  color: rgb(16,16,107);
+  user-select: none;
+}
+
+.test {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 10px;
+  gap: 20px;
+}
+
+.btn {
+  padding: 10px 50px;
+  font-size: 30px;
+  cursor: pointer;
+  user-select: none;
+  border: none;
+  background-color: dodgerblue;
+  border-radius: 6px;
+  transition: 0.1s linear;
+  color: #fff;
+}
+
+.btn:hover{
+  box-shadow: 0px 13px 16px -5px rgba(34, 60, 80, 0.6);
+}
+
+.btn:active {
+  scale: 0.96;
+}
+
+.winner {
+  background-color: limegreen;
+}
+
+.lose-game,
+.win-game {
+  display: grid;
+  place-items: center;
+  gap: 30px;
+  background: #fff;
+  padding: 50px;
+  color: limegreen;
+  border-radius: 30px;
+  margin-bottom: 120px;
+}
+
+.win {
+  font-size: 60px;
+}
+
+.lose {
+  font-size: 80px;
+  color: red;
+}
+
